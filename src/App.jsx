@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Route, Routes } from 'react-router-dom' // Corrected import
+import { Route, Routes } from 'react-router-dom'
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Shop from "./pages/Shop";
@@ -7,7 +6,6 @@ import Feature from "./pages/Feature";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import About from "./pages/About";
-import SearchBar from "./components/SearchBar";
 import Footer from "./components/Footer";
 import PlaceOrder from "./pages/PlaceOrder";
 import Product from "./pages/Product";
@@ -19,7 +17,6 @@ const App = () => {
    <>
    <ToastContainer />
     <Header/>
-    <SearchBar/>
      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/shop' element={<Shop/>}/>
